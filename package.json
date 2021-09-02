@@ -1,0 +1,18 @@
+{
+  "name": "vuejs2-cli-snippets",
+  "main": "./lib/vuejs2-cli-snippets",
+  "version": "0.1.0",
+  "description": "Snippets for Vuejs 2+ with best practices",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "vuejs2-cli-snippets:toggle"
+  },
+  "repository": "https://github.com/atom/vuejs2-cli-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

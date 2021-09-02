@@ -1,0 +1,157 @@
+'.vue':
+  'Vuejs component name':
+    'prefix': 'nameV'
+    'body': 'name: "$1",'
+  'Vuejs components':
+    'prefix': 'componentsV'
+    'body': """components: {
+      $1
+    },"""
+  'Vuejs props':
+    'prefix': 'propsV'
+    'body': """props: {
+      ${1:name}: {
+        type: ${2:type},
+        ${3:default: ${4:value},}
+        ${5:required: ${6:true},}
+      },
+    },"""
+  'Vuejs mixin':
+    'prefix': 'mixin'
+    'body': "mixins: [$1]"
+  'Vuejs data':
+    'prefix': 'dataV'
+    'body': """data() {
+      return {
+        $1
+      }
+    },"""
+  'Vuejs computed':
+    'prefix': 'computedV'
+    'body': """computed: {
+      ${1:propertyName}() {
+        $2
+      },
+    },"""
+  'Vuejs watch':
+    'prefix': 'watchV'
+    'body': """watch: {
+      ${1:propertyName}(value) {
+        $2
+      },
+    },"""
+  'Vuejs beforeCreate hook':
+    'prefix': 'beforeCreateV'
+    'body': """
+    beforeCreate() {
+      $1
+    }
+    """
+  'Vuejs created hook':
+    'prefix': 'createdV'
+    'body': """created() {
+      $1
+    },"""
+  'Vuejs beforeMount hook':
+    'prefix': 'beforeMountV'
+    'body': """
+    beforeMount() {
+      $1
+    }
+    """
+  'Vuejs mounted hook':
+    'prefix': 'mountedV'
+    'body': """mounted() {
+      $1
+    },"""
+  'Vuejs beforeUpdate hook':
+    'prefix': 'beforeUpdateV'
+    'body': """
+    beforeUpdate() {
+      $1
+    }
+    """
+  'Vuejs updated hook':
+    'prefix': 'updatedV'
+    'body': """
+    updated() {
+      $1
+    }
+    """
+  'Vuejs beforeDestroy hook':
+    'prefix': 'beforeDestroyV'
+    'body': """
+    beforeDestroy() {
+      $1
+    }
+    """
+  'Vuejs destroyed hook':
+    'prefix': 'destroyedV'
+    'body': """
+    destroyed() {
+      $1
+    }
+    """
+  'Vuejs methods':
+    'prefix': 'methodsV'
+    'body': """methods: {
+      ${1:methodName}() {
+        $2
+      },
+    },"""
+  'v-bind':
+    'prefix': 'vbind'
+    'body': ':$1="$2"'
+  'Vuejs v-model':
+    'prefix': 'vmodel'
+    'body': 'v-model="$1"'
+  'Vuejs v-show':
+    'prefix': 'vshow'
+    'body': 'v-show="$1"'
+  'Vuejs v-if':
+    'prefix': 'vif'
+    'body': 'v-if="$1"'
+  'Vuejs v-else':
+    'prefix': 'velse'
+    'body': 'v-else'
+  'v-else-if':
+    'prefix': 'velseif'
+    'body': 'v-else-if="$1"'
+  'Vuejs v-for':
+    'prefix': 'vfor'
+    'body': 'v-for="($1, i) in $2" :key="i"'
+  'Vuejs function':
+    'prefix': 'func'
+    'body': '$1() {},'
+  'Vuejs Template':
+    "prefix": "templateV"
+    "body": """
+      <template>
+        $1
+      </template>
+
+      <script>
+      export default {
+        data() {
+          return {
+            $2
+          }
+        },
+      }
+      </script>
+
+      <style lang="scss" scoped>
+      </style>
+    """
+  'Vuejs import from component':
+    'prefix': 'importV'
+    'body': "import ${1:name} from '@/${2:path}'"
+  'Vuejs import javascript from path':
+    'prefix': 'importVJS'
+    'body': "import { ${1:name} } from '@/${2:path}'"
+  "Vuejs Component include":
+    "prefix": "componentV"
+    "body": "<${1:componentName}>$2</${1:componentName}>"
+  "Vuejs Self closed component":
+    "prefix": "componentVSC"
+    "body": "<${1:componentName} />"
